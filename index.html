@@ -12,13 +12,14 @@
     		<li><a href="">Информация</a></li>
     		<li><a href="">Фото и Видео</a></li>
     		<li><a href="">Карта Штата</a></li>
-    		<li><a href="">Гостиницы</a></li>
+    		<li><a href="inner.html">Гостиницы</a></li>
     		
     	</ul>   		
     	</nav>
     </header>
     <main class="container">
     	<section class="main-logo">
+        <img src="img/main-welcome.png" alt="" width="459" height="353">
         
     		
     	</section>
@@ -32,6 +33,26 @@
 и мы покажем вам лучшие предложения гостиниц в седоне</h3>
         <button>ПОИСК ГОСТИНИЦЫ В седоне</button>
     	</section>	
+      <section class="form">
+        <fieldset>
+          <legend class="visually-hidden">поиск гостиницы в седоне</legend>
+          <form class="search" method="get" action="https://echo.htmlacademy.ru">
+            <ul>
+              <li><label>дата заезда :
+                <input type="text" name="arrival-date" placeholder="24 апреля 2017">
+              </label> </li>
+              <li><label>дата выезда :
+                <input type="text" name="departure-date" placeholder="4 июля 2017">
+              </label> </li>
+              <li><label for="quantity"> взрослые: </label><button type="button">+</button>  <input id="quantity" type="text" placeholder="2" name="quantity-adults"> <button type="button">-</button> </li>
+              <li><label for="quantity-kids"> дети: </label><button type="button">+</button>  <input id="quantity-kids" type="text" placeholder="0" name="quantity-kids"> <button type="button">-</button> </li>
+
+            </ul>
+            <button class="search-button" type="submit" >найти</button>
+          </form>
+        </fieldset> 
+        
+      </section>
     </main>
    <footer class="main-footer">
     <ul class="footer-info">
