@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -34,23 +36,22 @@
         <button>ПОИСК ГОСТИНИЦЫ В седоне</button>
     	</section>	
       <section class="form">
-        <fieldset>
-          <legend class="visually-hidden">поиск гостиницы в седоне</legend>
+       
           <form class="search" method="get" action="https://echo.htmlacademy.ru">
-            <ul>
+            <ul class="search-form">
               <li><label>дата заезда :
                 <input type="text" name="arrival-date" placeholder="24 апреля 2017">
               </label> </li>
               <li><label>дата выезда :
                 <input type="text" name="departure-date" placeholder="4 июля 2017">
               </label> </li>
-              <li><label for="quantity"> взрослые: </label><button type="button">+</button>  <input id="quantity" type="text" placeholder="2" name="quantity-adults"> <button type="button">-</button> </li>
-              <li><label for="quantity-kids"> дети: </label><button type="button">+</button>  <input id="quantity-kids" type="text" placeholder="0" name="quantity-kids"> <button type="button">-</button> </li>
+              <li><label for="quantity"> взрослые: </label><button type="button">-</button>  <input id="quantity" type="text" placeholder="2" name="quantity-adults"> <button type="button">+</button> </li>
+              <li><label for="quantity-kids"> дети: </label><button type="button">-</button>  <input id="quantity-kids" type="text" placeholder="0" name="quantity-kids"> <button type="button">+</button> </li>
 
             </ul>
             <button class="search-button" type="submit" >найти</button>
           </form>
-        </fieldset> 
+         
         
       </section>
     </main>
@@ -63,10 +64,9 @@
           <li><a class="social-button" href="#">Фейсбук</a></li>
           <li><a class="social-button" href="#">Ютуб</a></li>
         </ul>
-     <p class="footer-copyright">
-        <b>Разработано:</b> 
-        <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
-      </p>
+      <ul class="footer-html">
+        <li><img src="img/logo_name.png" alt=""></li>
+    </ul>
    </footer>
   </body>
 </html>
