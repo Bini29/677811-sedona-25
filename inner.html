@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/Normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet"> </head>
 
 <body>
@@ -26,15 +26,15 @@
                 <div>
                     <h2 class="filter-options filter-in">инфраструктура:</h2>
                     <ul class="filters">
-                        <li class="filter-option">
+                        <li class="filter-option" tabindex="0">
                             <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" id="filter-pool" checked>
                             <label class="filter-text" for="filter-pool"><span>Бассейн</span></label>
                         </li>
-                        <li class="filter-option">
+                        <li class="filter-option" tabindex="0">
                             <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="prking" id="filter-parking" checked>
                             <label class="filter-text" for="filter-parking">парковка</label>
                         </li>
-                        <li class="filter-option">
+                        <li class="filter-option" tabindex="0">
                             <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="wi-fi" id="filter-wi-fi" checked>
                             <label class="filter-text" for="filter-wi-fi">wi-fi</label>
                         </li>
@@ -43,15 +43,15 @@
                 <div>
                     <h2 class="filter-options filter-in">тип жилья</h2>
                     <ul class="filters">
-                        <li class="filter-option">
+                        <li class="filter-option" tabindex="0">
                             <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" id="filter-hotel" checked>
                             <label class="filter-text" for="filter-hotel">гостиница</label>
                         </li>
-                        <li class="filter-option">
+                        <li class="filter-option" tabindex="0">
                             <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="prking" id="filter-motel" checked>
                             <label class="filter-text" for="filter-motel">мотель</label>
                         </li>
-                        <li class="filter-option">
+                        <li class="filter-option" tabindex="0">
                             <input class="visually-hidden filter-input filter-input-checkbox " type="checkbox" name="wi-fi" id="filter-appart" checked>
                             <label class="filter-text" for="filter-appart">апартаменты</label>
                         </li>
@@ -86,8 +86,8 @@
             <p><a class="type" href="">по рейтингу</a></p>
             </ul>
             <ul class="arrows">
-                <li><a href=""><span class="up"><svg class="up"  xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#cacaca" d="M5.5 0L0 10h11z"/></svg></span></a></li>
-                <li><a href=""><span class="down"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#cacaca" d="M5.5 10L0 0h11"/></svg></span></a></li>
+                <li><a href=""><span class="up"><span class="visually-hidden">сортировка по рейтингу вверх</span><svg class="up"  xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#cacaca" d="M5.5 0L0 10h11z"/></svg></span></a></li>
+                <li><a href=""><span class="down"><span class="visually-hidden">сортировка по рейтингу вниз</span><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#81b3d2" d="M5.5 10L0 0h11"/></svg></span></a></li>
             </ul>
         </section>
         <section class="search-form">

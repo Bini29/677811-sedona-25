@@ -136,28 +136,28 @@ input[type="radio"].visually-hidden {
 }
  
 .quantity::-webkit-input-placeholder 
-{color:red; opacity:1;
+{color: #000000; opacity:1;
   }/* webkit */
 .quantity::-moz-placeholder          
-{color:red; opacity:1;
+{color: #000000; opacity:1;
   }/* Firefox 19+ */
 .quantity:-moz-placeholder           
-{color:red; opacity:1;
+{color: #000000; opacity:1;
   }/* Firefox 18- */
 .quantity:-ms-input-placeholder      
-{color:red; opacity:1;
+{color: #000000; opacity:1;
   }/* IE */
 .date-form::-webkit-input-placeholder 
-{color:red; opacity:1;
+{color: #000000; opacity:1;
   }/* webkit */
 .date-form::-moz-placeholder          
-{color:red; opacity:1;
+{color: #000000; opacity:1;
   }/* Firefox 19+ */
 .date-form:-moz-placeholder           
-{color:red; opacity:1;
+{color: #000000; opacity:1;
   }/* Firefox 18- */
 .date-form:-ms-input-placeholder      
-{color:red; opacity:1;
+{color: #000000; opacity:1;
   }/* IE */
 .date-form {
   font: inherit;
@@ -618,7 +618,14 @@ input[type="radio"].visually-hidden {
   padding-left: 69px;
   padding-right: 69px;
 }
-
+.advant-brige {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  margin-bottom: 58px;
+  padding-left: 71px;
+  padding-right: 71px;
+}
 .search {
   position: absolute;
   top: 290px;
@@ -818,11 +825,17 @@ input[type="radio"].visually-hidden {
 
 .filter-option {
   margin-bottom: 23px;
-  padding-left: 20px;
-  margin-left: 80px;
+  padding-left: 30px;
+  margin-left: 70px;
   list-style: none;
 }
 
+.filter-option:focus {
+  outline: none;
+  box-shadow:
+    0 0 0 1px #007fce,
+    0 0 0 1px #2f7cc0;
+}
 
 .filter-option label {
   position: relative;
